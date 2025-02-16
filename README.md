@@ -3,4 +3,4 @@
 ### Credit: Apple
 ### Inspired by [InstaDMG](https://code.google.com/archive/p/instadmg/)
 
-<img src="Pics/Deploy.png" alt="Github Project" style="width:60%;">
+<img src="Pics/Installer.png" alt="Github Project" style="width:80%;">
