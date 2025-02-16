@@ -97,7 +97,7 @@ echo "********************************************** "
 echo "  "
 echo "Download Combo Update 10.6.8 !"
 echo " "
-curl -L https://www.dropbox.com/s/wm0qmsy9qkylxlr/MacOSXUpdCombo10.6.8.dmg?dl=0 -o /Private/tmp/MacOSXUpdCombo10.6.8.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/MacOSXUpdCombo10.6.8.dmg -o /Private/tmp/MacOSXUpdCombo10.6.8.dmg
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/"MacOSXUpdCombo10.6.8.dmg"
 
@@ -110,7 +110,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download iTunes 11.4 !"
-curl -L https://www.dropbox.com/s/q6dieisrpyb6gju/iTunes11.4.dmg?dl=0 -o /Private/tmp/iTunes11.4.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/iTunes11.4.dmg -o /Private/tmp/iTunes11.4.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/iTunes11.4.dmg
@@ -122,7 +122,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download Java For Mac OS X 10.6 Update 17  v 17.1 !"
-curl -L https://www.dropbox.com/s/43zztbb6nbdwhwh/JavaForMacOSX10.6update17.dmg?dl=0 -o /Private/tmp/JavaForMacOSX10.6update17.dmg   
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/JavaForMacOSX10.6update17.dmg -o /Private/tmp/JavaForMacOSX10.6update17.dmg   
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/JavaForMacOSX10.6update17.dmg
@@ -134,7 +134,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download Apple Software install Update V 1.0 !"
-curl -L https://www.dropbox.com/s/f02u0zblfrzvfb1/AppleSoftwareInstallerUpdate.dmg?dl=0 -o /Private/tmp/AppleSoftwareInstallerUpdate.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/AppleSoftwareInstallerUpdate.dmg -o /Private/tmp/AppleSoftwareInstallerUpdate.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/AppleSoftwareInstallerUpdate.dmg
@@ -146,7 +146,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download Safari v 5.1.10 !"
-curl -L https://www.dropbox.com/s/msfk36e8blf73xe/Safari5.1.10SnowLeopardManual.dmg?dl=0 -o /Private/tmp/Safari5.1.10SnowLeopardManual.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/Safari5.1.10SnowLeopardManual.dmg -o /Private/tmp/Safari5.1.10SnowLeopardManual.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/Safari5.1.10SnowLeopardManual.dmg
@@ -158,7 +158,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download Security Update 2013-004 V 1.0 !"
-curl -L https://www.dropbox.com/s/0l88ytqijti3c9k/SecUpd2013-004.dmg?dl=0 -o /Private/tmp/SecUpd2013-004.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/SecUpd2013-004.dmg -o /Private/tmp/SecUpd2013-004.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/SecUpd2013-004.dmg
@@ -170,7 +170,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download Migration Assistant Update for Snow V 1.1 !"
-curl -L https://www.dropbox.com/s/p73q3k6t7e7annk/SnowLeoMigrationAsst.dmg?dl=0 -o /Private/tmp/SnowLeoMigrationAsst.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/SnowLeoMigrationAsst.dmg -o /Private/tmp/SnowLeoMigrationAsst.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/SnowLeoMigrationAsst.dmg
@@ -182,7 +182,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "Download Remote Desktop Client Update v 3.5.4 !"
-curl -L https://www.dropbox.com/s/cbm33owlfqbnah0/ARDClient3.5.4.dmg?dl=0 -o /Private/tmp/ARDClient3.5.4.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/ARDClient3.5.4.dmg -o /Private/tmp/ARDClient3.5.4.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/ARDClient3.5.4.dmg
@@ -194,7 +194,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  " 
 echo "Download Mac App Store Update for OS X Snow Leopard  v1.0 !"
-curl -L https://www.dropbox.com/s/o1c30y73ma25tq1/macappstoreupdate.dmg?dl=0 -o /Private/tmp/macappstoreupdate.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/macappstoreupdate.dmg -o /Private/tmp/macappstoreupdate.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/macappstoreupdate.dmg
@@ -206,7 +206,7 @@ Sleep 2
 echo "********************************************** " 
 echo "  "
 echo "AirPort Utility v 5.6.1 !"
-curl -L https://www.dropbox.com/s/nwawc52qi0apgpm/AirPortUtility.dmg?dl=0 -o /Private/tmp/AirPortUtility.dmg
+curl -L https://github.com/chris1111/Mac-OS-X-Deploy/releases/download/Update/AirPortUtility.dmg -o /Private/tmp/AirPortUtility.dmg
 Sleep 2 
 echo " "
 hdiutil attach -noverify -nobrowse /Private/tmp/AirPortUtility.dmg
