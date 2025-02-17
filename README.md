@@ -2,7 +2,8 @@
 - Package Using ASR Restore to Deploy Mac OS X Snow Lopard 10.6.8 on SSD 
 ### Credit: Apple
 ### Inspired by [InstaDMG](https://code.google.com/archive/p/instadmg/)
-
+### Download Release ➥ [Mac OS X Deploy](https://github.com/chris1111/Mac-OS-X-Deploy/releases/tag/Deploy)
+### Usage ➥ [Usage PDF](https://github.com/chris1111/Mac-OS-X-Deploy/blob/main/Usage.pdf)
 <img src="Pics/Installer.png" alt="Github Project" style="width:80%;">
 
 ### Video Usage: Mac OS X Deploy ⬇︎
