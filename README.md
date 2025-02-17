@@ -1,5 +1,6 @@
 # Mac OS X Deploy
-- Package Using ASR Restore to Deploy Mac OS X Snow Lopard 10.6.8 on SSD 
+- Package Using ASR Restore to Deploy Mac OS X Snow Lopard 10.6.8 on SSD
+-  To using this Package you must have Mac OS X Snow Leopard! Do not use on any system other than 10.6x
 ### Credit: [Apple](https://cdsassets.apple.com/live/6GJYWVAV/user/ma1170_welcome_to_snow_leopard.pdf)
 ### Inspired by [InstaDMG](https://code.google.com/archive/p/instadmg/)
 ### Download Release ➥ [Mac OS X Deploy](https://github.com/chris1111/Mac-OS-X-Deploy/releases/tag/Deploy)
