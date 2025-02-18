@@ -2,7 +2,7 @@
 [![pages-build-deployment](https://github.com/chris1111/Mac-OS-X-Deploy/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/chris1111/Mac-OS-X-Deploy/actions/workflows/pages/pages-build-deployment)
 - Package Using ASR Restore to Deploy Mac OS X Snow Leopard 10.6.8 on SSD
 -  To using this Package you must have Mac OS X Snow Leopard! Do not use on any system other than 10.6x
-- To create the Mac O S X Deploy 10.6x disk image
+- To create Option (4) the Mac O S X Deploy 10.6x disk image
 the program will need to install Xcode, MacPorts and php56 with php56-curl on your current Mac because the original Apple Curl command no longer works.
  
 ### Credit: [Apple](https://cdsassets.apple.com/live/6GJYWVAV/user/ma1170_welcome_to_snow_leopard.pdf)
