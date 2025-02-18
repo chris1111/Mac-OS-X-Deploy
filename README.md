@@ -10,7 +10,7 @@ the program will need to install Xcode, MacPorts and php56 with php56-curl on yo
 ### Inspired by [InstaDMG](https://code.google.com/archive/p/instadmg/)
 ### Download Release ➥ [Mac OS X Deploy](https://github.com/chris1111/Mac-OS-X-Deploy/releases/tag/Deploy)
 ### Usage ➥ [Usage PDF](https://github.com/chris1111/Mac-OS-X-Deploy/blob/main/Usage.pdf)
-<img src="Pics/Deploy-1.png" alt="Github Project" style="width:80%;">
+<img src="Pics/Deploy-1.png" alt="Github Project" style="width:60%;">
 <img src="Pics/Installer.png" alt="Github Project" style="width:80%;">
 
 ### Video Usage: Mac OS X Deploy ⬇︎
