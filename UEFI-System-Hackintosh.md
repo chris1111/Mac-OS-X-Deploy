@@ -1,4 +1,5 @@
-If your System is UEFI remove the boot file in the EFI Partition. 
+### If your System is UEFI, after option 5 (Deploy --> SSD/HD) Installing Legacy-OpenCore-Package.pkg 
+#### remove the boot file in the EFI Partition 
 
 <img src="Pics/boot-file.png" alt="Github Project" style="width:50%;">
 
