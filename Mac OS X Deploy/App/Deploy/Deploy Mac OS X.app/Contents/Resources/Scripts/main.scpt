@@ -4,8 +4,9 @@ This program will deploy
 Mac OS X Snow Leopard
 to the volume of your choice.
 
-You will also have the option to be able to install Clover_v2.3k r3513 
-Mode ESP
+For Hackintosh User You will also have the option to be able to install 
+OpenCore 1.0.2 Duet Legacy
+Note: OpenCore is bootable from 10.6 to macOS Sequoia 15
 " with icon note buttons {"Quit", "Continue"} cancel button "Quit" default button {"Continue"}
 --If Cntinue
 if result = {button returned:"Continue"} then
@@ -86,11 +87,12 @@ and press the (OK) button
 Complete successfully!" with icon note buttons {"Done"} default button {"Done"} giving up after 20
 	
 	set theAction to button returned of (display dialog "
-Open Bootloader Clover EFI r3513" with icon note buttons {"Quit", "Open"} cancel button {"Quit"} default button {"Open"} giving up after 20)
+Use Bootloader OpenCore Duet 1.0.2" with icon note buttons {"Quit", "OpenCore"} cancel button {"Quit"} default button {"OpenCore"} giving up after 30)
 	
-	if theAction = "Open" then set theFile to ((path to me) as string) & "Contents:Resources:Installer:Clover-ESP.pkg"
+	if theAction = "OpenCore" then set theFile to ((path to me) as string) & "Contents:Resources:Installer:Legacy-OpenCore-Package.pkg"
 	tell application "Finder" to open theFile
 	
 end if
+
 
 return Box
