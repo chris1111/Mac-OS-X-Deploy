@@ -43,7 +43,7 @@ if [ -e "$XCODE" ]; then
 else 
     echo "$XCODE is not installed on your System!"
     echo "Installation Xcode.mpkg!"
-    hdiutil attach -noverify -nobrowse ./Sortie/"Mac OS X Install DVD.dmg"
+    hdiutil attach -noverify -nobrowse ./Out/"Mac OS X Install DVD.dmg"
     Sleep 2
     sudo installer -verboseR -pkg /Volumes/"Mac OS X Install DVD"/"Optional Installs.localized"/Xcode.mpkg -target /
     Sleep 2
