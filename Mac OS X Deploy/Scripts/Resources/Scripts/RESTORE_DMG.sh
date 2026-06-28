@@ -1,6 +1,6 @@
 #!/bin/bash
 # script Mac OS X Deploy.
-# Copyright (c) 2016, 2025 chris1111
+# Copyright (c) 2016, 2026 chris1111
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -15,19 +15,14 @@
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 echo " "
 
-unmount_if_necessary() {
-    [ -d "$1" ] && umount -f "$1"
-}
+# Check Mounted Disk
+if [[ -d "/Volumes/Mac OS X Deploy" ]]; then
+ hdiutil detach -Force "/Volumes/Mac OS X Deploy"
+fi
 
-unmount_if_necessary /Volumes/"Mac OS X Deploy"
-
-
-unmount_if_necessary() {
-    [ -d "$1" ] && umount -f "$1"
-}
-
-unmount_if_necessary /Volumes/"Mac OS X Install DVD"
-
+if [[ -d "/Volumes/Mac OS X Install DVD" ]]; then
+ hdiutil detach -Force "/Volumes/Mac OS X Install DVD"
+fi
 
 hdiutil attach -noverify -nobrowse -mountpoint /Private/tmp/Installer-OS ./Out/"Mac OS X Deploy 10.6.X.dmg"
 

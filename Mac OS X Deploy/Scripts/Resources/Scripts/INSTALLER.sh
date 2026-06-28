@@ -1,6 +1,6 @@
 #!/bin/sh
 # script Mac OS X Deploy.
-# Copyright (c) 2016, 2025 chris1111
+# Copyright (c) 2016, 2026 chris1111
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above

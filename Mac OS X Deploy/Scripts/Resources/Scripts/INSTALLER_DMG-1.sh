@@ -1,6 +1,6 @@
 #!/bin/bash
 # script Mac OS X Deploy.
-# Copyright (c) 2016, 2025 chris1111
+# Copyright (c) 2016, 2026 chris1111
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -15,29 +15,24 @@
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 echo " "
 Sleep 3
-unmount_if_necessary() {
-    [ -d "$1" ] && umount -f "$1"
-}
+# Check Mounted Disk
+if [[ -d "/Volumes/Mac OS X Deploy" ]]; then
+ hdiutil detach -Force "/Volumes/Mac OS X Deploy"
+fi
 
-unmount_if_necessary /Volumes/"Mac OS X Deploy"
-
-
-unmount_if_necessary() {
-    [ -d "$1" ] && umount -f "$1"
-}
-
-unmount_if_necessary /Volumes/"Mac OS X Install DVD"
+if [[ -d "/Volumes/Mac OS X Install DVD" ]]; then
+ hdiutil detach -Force "/Volumes/Mac OS X Install DVD"
+fi
 
 if [ -f ./Out/"Mac OS X Deploy 10.6.X.dmg" ]; then
    rm -rf ./Out/"Mac OS X Deploy 10.6.X.dmg" 
 fi
 
-
 echo " "
 echo "********************************************** " 
 echo "  "
 
-XCODE=/Developer/Applications/Xcode.app
+XCODE="/Developer/Applications/Xcode.app"
 if [ -e "$XCODE" ]; then
     echo "$XCODE exist"
 else 
@@ -53,7 +48,7 @@ fi
 
 Sleep 2
 
-CLI=/opt/local/etc/macports
+CLI="/opt/local/etc/macports"
 if [ -e "$CLI" ]; then
     echo "$CLI exist"
 else 
@@ -64,14 +59,20 @@ else
 
 fi 
 
-PHP56=/opt/local/include/curl
-if [ -e "$PHP56" ]; then
-    echo "$PHP56 exist"
+CURL="/opt/local/bin/curl"
+if [ -e "$CURL" ]; then
+    echo "$CURL exist"
 else 
-    echo "$PHP56 is not installed on your System!"
-    echo "Installation php56-curl!"
-    ./Scripts/Resources/Scripts/PHP56.command
+    echo "$CURL is not installed on your System!"
+    echo "Installation CURL!"
+    sudo /opt/local/bin/port -N selfupdate
+    Sleep 1
+    sudo /opt/local/bin/port -N install curl
+    Sleep 1
+    echo 'export PATH=/opt/local/bin:/opt/local/sbin:$PATH' >> ~/.bash_profile
+    source ~/.bash_profile
 fi
+
 
 Sleep 2 
 echo "********************************************** "

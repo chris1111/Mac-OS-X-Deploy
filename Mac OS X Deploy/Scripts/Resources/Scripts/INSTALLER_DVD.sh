@@ -1,6 +1,6 @@
 #!/bin/bash
 # script Mac OS X Deploy.
-# Copyright (c) 2016, 2025 chris1111
+# Copyright (c) 2016, 2026 chris1111
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -14,15 +14,10 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 echo " "
-
-
-unmount_if_necessary() {
-    [ -d "$1" ] && umount -f "$1"
-}
-
-unmount_if_necessary /Volumes/install_dmg
-
-
+# Check Mounted Disk
+if [[ -d "/Volumes/install_dmg" ]]; then
+ hdiutil detach -Force "/Volumes/install_dmg"
+fi
 
 if [ -f ./Out/"Mac OS X Install DVD.dmg" ]; then
    rm -rf ./Out/"Mac OS X Install DVD.dmg" 
