@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EthernetBuiltIn</key>
+	<string>Yes</string>
+	<key>ShowInfo</key>
+	<string>Yes</string>
+	<key>Graphics Mode</key>
+	<string>1920x1080x32</string>
+	<key>GraphicsEnabler</key>
+	<string>Yes</string>
+	<key>Instant Menu</key>
+	<string>Yes</string>
+	<key>Legacy Logo</key>
+	<string>No</string>
+	<key>Kernel</key>
+	<string>mach_kernel</string>
+	<key>Kernel Flags</key>
+	<string>darkwake=0 npci=0x3000 arch=x86_64 dart=0 PCIRootUID=1</string>
+	<key>UseKernelCache</key>
+	<string>Yes</string>
+</dict>
+</plist>

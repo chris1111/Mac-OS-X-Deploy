@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.6" authoringToolBuild="201">
+    <title> Chameleon Mac OS X Snow Leopard</title>
+    <options customize="allow" allow-external-scripts="yes"/>
+    <domains enable_anywhere="true"/>
+    <background file="background.png" alignment="center" scaling="tofit"/>
+    <welcome file="Welcome.rtfd"/>
+    <readme file="ReadMe.rtfd"/>
+    <license file="License"/>
+    <choices-outline>
+        <line choice="choiceboot">
+            <line choice="choicestandard"/>
+            <line choice="choiceefi"/>
+        </line>
+        <line choice="choice2"/>
+        <line choice="choice3"/>
+    </choices-outline>
+    <choice id="choiceboot" title="Chameleon Bootloader" description="Chameleon Bootloader Enoch - v2.4svn -rev 2923" start_selected="false"/>
+    <choice id="choicestandard" title="Chameleon Standard" description="Chameleon Standard  Enoch - v2.4svn -rev 2923" start_selected="false" selected="!choices['choiceefi'].selected">
+        <pkg-ref id="com.chameleonMacOsXSnowLeopard.standard.pkg"/>
+    </choice>
+    <choice id="choiceefi" title="Chameleon EFI" description="Chameleon EFI Enoch - v2.4svn -rev 2923" start_selected="true" selected="!choices['choicestandard'].selected">
+        <pkg-ref id="com.chameleonMacOsXSnowLeopard.efi.pkg"/>
+    </choice>
+    <choice id="choice2" title="Chameleon PC" description="Chameleon PC" start_selected="true" selected="!choices['choice3'].selected">
+        <pkg-ref id="com.chameleonMacOsXSnowLeopard.Extra-1.pkg"/>
+    </choice>
+    <choice id="choice3" title="Chameleon Laptop" description="Chameleon Laptop " start_selected="false" selected="!choices['choice2'].selected">
+        <pkg-ref id="com.chameleonMacOsXSnowLeopard.Extra-2.pkg"/>
+    </choice>
+    <pkg-ref id="com.chameleonMacOsXSnowLeopard.standard.pkg" installKBytes="1108" version="1.0" auth="Root">#standard.pkg</pkg-ref>
+    <pkg-ref id="com.chameleonMacOsXSnowLeopard.efi.pkg" installKBytes="1108" version="1.0" auth="Root">#efi.pkg</pkg-ref>
+    <pkg-ref id="com.chameleonMacOsXSnowLeopard.Extra-1.pkg" installKBytes="6140" version="1.0" auth="Root">#extra-1.pkg</pkg-ref>
+    <pkg-ref id="com.chameleonMacOsXSnowLeopard.Extra-2.pkg" installKBytes="6428" version="1.0" auth="Root">#extra-2.pkg</pkg-ref>
+    <background-darkAqua file="background.png" alignment="center" scaling="tofit"/>
+</installer-script>
