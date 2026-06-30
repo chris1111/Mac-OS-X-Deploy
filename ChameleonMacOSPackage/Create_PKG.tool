@@ -11,7 +11,7 @@ rm -rf ./InstallerChameleon
 rm -rf /tmp/Package-DIR
 rm -rf ./*.pkg
 
-if [[ -d "./Chameleon-Snow.pmdoc" ]]; then
+if [[ -d "./Chameleon" ]]; then
     Sleep 1
     mkdir -p ./InstallerChameleon
     mkdir -p ./InstallerChameleon/BUILD-PACKAGE
@@ -29,7 +29,7 @@ if [[ -d "./Chameleon-Snow.pmdoc" ]]; then
     cp -r ./Distribution /tmp/Package-DIR
     cp -r ./Resources /tmp/Package-DIR
     Sleep 1
-    pkgutil --flatten /Private/tmp/Package-DIR ./Chameleon-Snow.pkg
+    pkgutil --flatten /Private/tmp/Package-DIR ./Chameleon-MacOS.pkg
     Sleep 1
     rm -rf ./InstallerChameleon
 

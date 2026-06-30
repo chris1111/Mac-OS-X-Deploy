@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.6" authoringToolBuild="201">
-    <title> Chameleon Mac OS X Snow Leopard</title>
+    <title>Chameleon Mac OS X</title>
     <options customize="allow" allow-external-scripts="yes"/>
     <domains enable_anywhere="true"/>
     <background file="background.png" alignment="center" scaling="tofit"/>
