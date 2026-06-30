@@ -1,11 +1,26 @@
 # script Mac OS X Deploy.
-# Copyright (c) 2016, 2025 chris1111
+# Copyright (c) 2016, 2026 chris1111
 PARENTDIR=$(dirname "$0")
 cd "$PARENTDIR"
+# Vars
+apptitle="Mac OS X Deploy"
+version="1.0"
+# Set Icon directory and file 
+iconfile="/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns"
 defaults write com.apple.terminal "Default Window Settings" "Pro"
 defaults write com.apple.terminal "Startup Window Settings" "Pro"
 echo $USER > "$PARENTDIR/Scripts/Resources/Users/Name.txt"
-#   Slick Progress Bar
+# Check Mounted Disk
+if [ -d "/Volumes/Mac OS X Deploy" ]; then
+    /usr/sbin/diskutil rename "Mac OS X Deploy" "MacOS X Deploy"
+    echo "No volume with the name Mac OS X Deploy can be mounted when you using this program!"
+    osascript -e 'tell app "Terminal" to display dialog "A volume with the name Mac OS X Deploy 
+is mounted on this system, you can not using this name when you using this program!
+
+The Disk is rename to MacOS X Deploy.\n\n" buttons {"OK"} default button 1 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'" giving up after 25'
+fi
+
+# Slick Progress Bar
 # Functions
 PUT(){ echo -en "\033[${1};${2}H";}  
 DRAW(){ echo -en "\033%";echo -en "\033(0";}         
@@ -38,4 +53,4 @@ PUT 10 12
 echo -e ""                                        
 NORM
 printf '\e[8;39;81t'
-./Scripts/Resources/Scripts/INSTALLER.sh
+./Scripts/Resources/MacOSXDeploy.sh
