@@ -15,6 +15,9 @@ the program will need to install Xcode, MacPorts and curl on your current Mac be
 <img src="Pics/Installer.png" alt="Github Project" style="width:80%;">
 
 ### Video Usage: Mac OS X Deploy ⬇︎
+- (NOTE Video change: Chameleon Bootloader Installation Package is now used instead of OpenCore.
+- PHP56 is no longer used in the program.)
+
 [![Modular Image Creation](https://github.com/user-attachments/assets/b190ecad-c70f-4cdf-ab3a-54fe9015e78b)](https://youtu.be/vIDzyEaw_YA)
 
 ### Bonus: ☞ A working Browser after using Mac OS X Deploy utility [ArticFox](https://github.com/chris1111/Snow-Leopard-DVD-Creator/releases/download/USB-V1/ArticFox.pkg.zip)
