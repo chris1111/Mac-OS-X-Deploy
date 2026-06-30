@@ -8,6 +8,7 @@ the program will need to install Xcode, MacPorts and curl on your current Mac be
 ### A story that dates back to [2017](https://www.hackintosh-montreal.com/t6467-mac-os-x-deploy) as far as I'm concerned.
 ### Credit: [Apple](https://cdsassets.apple.com/live/6GJYWVAV/user/ma1170_welcome_to_snow_leopard.pdf)
 ### Inspired by [InstaDMG](https://code.google.com/archive/p/instadmg/)
+### Main Script ➥ [Mac OS X Deploy](https://github.com/chris1111/Mac-OS-X-Deploy/blob/main/Mac%20OS%20X%20Deploy/Scripts/Resources/MacOSXDeploy.sh)
 ### Download Release ➥ [Mac OS X Deploy](https://github.com/chris1111/Mac-OS-X-Deploy/releases/tag/Deploy)
 ### Usage ➥ [Usage PDF](https://github.com/chris1111/Mac-OS-X-Deploy/blob/main/Usage.pdf) 
 <img src="Pics/Deploy-1.png" alt="Github Project" style="width:60%;">
