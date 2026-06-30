@@ -53,6 +53,9 @@ echo "          ***************************************************************
 
                            5)   Deploy --> SSD/HD
                                *********************
+
+                           6)   Use Chameleon Bootloader
+                               *********************
                                
                            X)   Quit Program
                                *********************                         
@@ -623,6 +626,12 @@ Make sure your internal or external SSD is ready for use!."
 echo " "
 echob "Finished."
 }
+function CHAMELEON
+{
+head
+Open ./App/Deploy/Deploy\ Mac\ OS\ X.app/Contents/Resources/Installer/Chameleon-Snow.pkg
+echob "Finished."
+}
 function Quit
 {
 clear
@@ -653,6 +662,9 @@ echo
 INSTALLER_DMGG ;;
 5|5)
 INSTALLER_VOLUME ;;
+6|6)
+echo
+CHAMELEON ;;
 x|X)
 echo
 Quit ;;
