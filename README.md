@@ -12,7 +12,7 @@ the program will need to install Xcode, MacPorts and curl on your current Mac be
 ### Download Release ➥ [Mac OS X Deploy](https://github.com/chris1111/Mac-OS-X-Deploy/releases/tag/Deploy)
 ### Usage ➥ [Usage PDF](https://github.com/chris1111/Mac-OS-X-Deploy/blob/main/Usage.pdf) 
 <img src="Pics/Deploy-1.png" alt="Github Project" style="width:60%;">
-<img src="Pics/Installer.png" alt="Github Project" style="width:80%;">
+<img src="Pics/Installer.png" alt="Github Project" style="width:60%;">
 
 ### Video Usage: Mac OS X Deploy ⬇︎
 - (NOTE Video change: Chameleon Bootloader Installation Package is now used instead of OpenCore.
